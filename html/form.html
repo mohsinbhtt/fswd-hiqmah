@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+</head>
+
+<body>
+
+    <h1>Contact Us</h1>
+
+    <form method="post" action="">
+
+
+        <input type="hidden" name="form-type" value="contact" />
+
+        <fieldset>
+            <legend>Personal Information</legend>
+
+
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Name" required autocomplete="name" />
+
+            <br><br>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Email" required autocomplete="email" />
+
+            <br><br>
+
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder= 123-456-7890"
+                pattern="^\d{3}[-.\s]?\d{3}[-.\s]?\d{4}$" autocomplete="tel" />
+
+            <br><br>
+
+
+            
+                <legend>Gender</legend>
+                <input type="radio" id="gender-male" name="gender" value="male" required />
+                <label for="gender-male">Male</label>
+
+                <input type="radio" id="gender-female" name="gender" value="female" required />
+                <label for="gender-female">Female</label>
+
+                <input type="radio" id="gender-other" name="gender" value="other" required />
+                <label for="gender-other">Other</label>
+            
+
+        
+
+        <br>
+
+
+        <fieldset>
+            <legend>Message Details</legend>
+
+
+            <label for="subject">Subject:</label>
+            <select id="subject" name="subject" required>
+                <option value="">-- Please choose an option --</option>
+                <option value="general">General Inquiry</option>
+                <option value="support">Support</option>
+                <option value="feedback">Feedback</option>
+            </select>
+
+            <br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="5" cols="40" required></textarea>
+        </fieldset>
+
+        <br>
+
+
+        <label for="terms">
+            <input type="checkbox" id="terms" name="terms" required />
+            I agree to the <a href="#" target="_blank">Terms and Conditions</a>.
+        </label>
+
+        <br><br>
+
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+</fieldset>
+    </form>
+
+</body>
+
+</html>
