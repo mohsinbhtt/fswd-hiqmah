@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+}
+
+
+form{
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 600px;
+    margin: 30px auto;
+    font-family: 'Segoe UI',sans-serif;
+    box-shadow: 0 4PX 10px;
+}
+h1{
+    text-align: center;
+    color: darkblue;
+font-weight: bolder;
+}
+label{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+button{
+    background-color: #4caf50;
+    color: white;
+    padding-left: 10px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+a{
+    color: #036;
+    text-decoration:none;
+}
+fieldset{
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 10px;
+}
+.gender{
+    padding-top: 10px ;
+    color: #444;
+
+}
+legend{
+    color:#444;
+    font-weight: bold;
+
+}
+.sub{
+    margin-top: 10px auto;
+}
+.gen{
+    border: 1px;
+    padding-bottom: 10px;
+}
+input[type="radio"]{
+vertical-align: middle;
+margin: 3px;
+}
+.form-input:focus{
+border-color: #ff9800;
+}
+.form-inpu{
+ padding: 5px;
+    border: 1px solid#ccc;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+.form-input:hover{
+    border-color:#ff9800;
+}
+ 
