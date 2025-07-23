@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+font-family: "Roboto",sans-serif;
+}
+body{
+    background-color: #f0f8ff;
+    color: #333;
+    padding: 20px;
+    min-height: 2000px;
+}
+.container{
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    position: relative;
+ 
+}
+.profile-card{
+    border: 2px solid #4682b4;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    width: 100%;
+    background-color: #e6f2ff;
+    text-align: center;
+}
+.profile-card img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #4682b4;
+    margin-bottom: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1{
+    color: #2e8b57;
+    margin-bottom: 10px;
+}
+p{
+    line-height: 1.6;
+    text-align: center;
+}
+a{
+    color: rgb(0, 102, 204);
+    text-decoration: none;
+}
+a:hover{
+    color: #ff6347;
+}
+a:visited{
+    color: rgb(35, 2, 67);
+}
+.btn{
+    margin-top: 15px;
+    background-color: #4682b4;
+    color: white;
+    padding: 10px 20px;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.btn:hover{
+    background-color: #5a9bd3;
+}
+
+.sticky-heading{
+    position: sticky;
+    top: 0;
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+text-align: center;
+}
