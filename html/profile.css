@@ -72,10 +72,16 @@ a:visited{
 }
 
 .sticky-heading{
+    background-color:orange;
     position: sticky;
+    color: white;
     top: 0;
+    margin:auto;
     padding: 10px 0;
     font-size: 20px;
     font-weight: bold;
 text-align: center;
+z-index: 9999;
+/* display: inline-block; */
+max-width: fit-content;
 }
