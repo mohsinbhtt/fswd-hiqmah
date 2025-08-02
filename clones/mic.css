@@ -12,6 +12,7 @@ html,body{
 a{
     text-decoration: none;
     color: inherit;
+    cursor: pointer;
 }  
 .navbar{
     background: #fff;
@@ -20,6 +21,7 @@ a{
     align-items:center ;
     padding: 12px 40px;
     border-bottom: 1px solid #ddd;
+    flex-wrap: wrap;
 
 }
 .navbar .left,
@@ -38,12 +40,12 @@ a{
 .surfacelaptop{
     position: relative;
     width: 100%;
-    min-height: 400px;
-    overflow: visible;
+    height: auto;
+   
 }
 .surface-img{
     width:100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
     display: block;
 }
@@ -71,25 +73,25 @@ a{
     cursor: pointer;
 }
 .grid{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
     padding: 20px;
     gap: 10px;
-    flex-wrap: wrap;
+
 }
  .card{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: flex-start;
     background: white;
     border: 1px solid #ddd;
     width: 290px;
-    /* padding: 20px; */
     border-radius: 6px;
     height: 400px;
-    display: flex;
-    flex-direction: column;
- }
+   }
  .card img{
     width: 100%;
-    /* height: 100%; */
     object-fit: cover;
     margin-bottom: 15px;
  }
@@ -106,12 +108,17 @@ a{
     flex-grow: 1;
  }
  .card button{
-    margin: 0 15px 15px;
+    margin-top: auto;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    align-self: auto;
     background: #0067b8;
     color:white;
     border: none;
     padding: 10px 15px;
     font-size: 14px;
+    cursor: pointer;
+    width: auto;
   
  }
  .gamepass{
@@ -128,8 +135,7 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
+    
  }
  .gp-text h2{
     font-size: 30px;
@@ -137,7 +143,7 @@ a{
  }
  .gamepass .gp-text p{
     font-size: 16px;
-    margin-bottom: 20px;
+    margin: 0,0,20px,0
  }
  .gp-buttons{
     display: flex;
@@ -162,53 +168,13 @@ a{
     height: 100%;
     object-fit: cover;
  }
-  .grids{
-    /* margin: 0 auto; */
-    display: flex;
-    gap: 20px;
-    justify-content: space-between;
-    /* align-items: stretch; */
-    margin-top: 20px;
-    padding: 20px;
- }
- .cards{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    border-radius: 6px;
-    width: 250px;
-    /* padding: 20px; */
-     background: white;
-    border: 1px solid #ddd;
- }
- .cards img{
-    width: 100%;
-    /* height: auto; */
- }
- .cards h3{
-    font-size: 18px;
-    margin: 10px 0 ;
-    min-height: 48px;
- }
- .cards p{
-    font-size: 14px;
-    margin-bottom: auto;
-    min-height: 80px;
- }
- .cards button{
-    margin-top: 20px;
-     background: #0067b8;
-    color:white;
-    border: none;
-    padding: 10px 15px;
-    font-size: 14px;
- } 
+ 
 .footer {
   background-color: #f3f3f3;
-  font-family: sans-serif;
-  font-size: 14px;
+  font-family: 'Segoe UI', SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 10px;
   padding: 40px 60px 20px;
-  color: #333;
+  color: #616161;
   margin-top: 20px;
 }
 
@@ -233,9 +199,9 @@ a{
 
 .footer-col a {
   display: block;
-  color: #555;
+  color: #616161;
   text-decoration: none;
-  margin-bottom: 6px;
+  margin-bottom: 15px;
 }
 
 .footer-col a:hover {
@@ -249,7 +215,7 @@ a{
   justify-content: space-between;
   flex-wrap: wrap;
   font-size: 12px;
-  color: #666;
+  color:#616161;
 }
 
 .footer-left span {
@@ -258,7 +224,7 @@ a{
 
 .footer-right a {
   margin-right: 15px;
-  color: #666;
+  color:#616161;
   text-decoration: none;
 }
 
@@ -267,5 +233,69 @@ a{
 }
 
 .footer-right span {
-  color: #999;
+  color:#616161;
+}
+@media (max-width:1024px){
+   .grid{
+      grid-template-columns: repeat(2,1fr);
+   }
+  
+
+   .surfacelaptop{
+      height: 400px;
+   }
+   .surface-text{
+      left: 40px;
+   }
+   .surface-text h1{
+      font-size: 2rem;
+   }
+   .surface-text p{
+      font-size: 1rem;
+   }
+}
+@media (max-width:768px){
+   .grid{
+      grid-template-columns: 1fr;
+   }
+    .navbar{
+      flex-direction: column;
+      align-items: flex-start;
+   }
+   .left, .right{
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+      width: 100%;
+   }
+   .left a,.right a{
+      padding: 5px 0;
+      font-size: 0.95rem;
+   }
+   .surfacelaptop{
+      flex-direction: column;
+      height: auto;
+   }
+   .surface-text{
+      position: static;
+      background: white;
+      color: black;
+      padding: 20px;
+      width: 100%;
+      text-align: left;
+   }
+   .surface-img{
+      height: auto;
+   }
+   .surface-text h1{
+      font-size: 1.5rem;
+   }
+   .surface-text p{
+      font-size: 1rem;
+   }
+   .surface-text button{
+      font-size: 0.95rem;
+      padding: 10px 20px;
+
+   }
 }
