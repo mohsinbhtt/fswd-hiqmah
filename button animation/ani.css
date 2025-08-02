@@ -1,0 +1,35 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+    height: 100vh;
+}
+ button {
+      padding: 16px 32px;
+      font-size: 18px;
+      color: white;
+      background-color: #222;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0px 0 10px rgb(255, 5, 5);
+      animation: glow 2.5s ease-in-out infinite;
+    }
+
+    @keyframes glow {
+      0% {
+        box-shadow: 0 0 30px rgb(255, 0, 0);
+      }
+      25% {
+        box-shadow: 0 0 15px rgb(0, 76, 255);
+      }
+      50% {
+        box-shadow: 0 0 30px rgb(74, 20, 166);
+      }
+      75% {
+        box-shadow: 0 0 15px rgb(73, 255, 1);
+      }
+      100% {
+        box-shadow: 0 0 25px rgb(217, 255, 0);
+      }
+    }
