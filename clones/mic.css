@@ -280,10 +280,11 @@ a{
       grid-template-columns: 1fr;
    }
     .navbar{
-      flex-direction: column;
-      align-items: flex-start;
+      /* flex-direction: column;
+      align-items: flex-start; */
+      display: none;
    }
-   .left, .right{
+   /* .left, .right{
       flex-direction: column;
       align-items: flex-start;
       gap: 10px;
@@ -292,7 +293,7 @@ a{
    .left a,.right a{
       padding: 5px 0;
       font-size: 0.95rem;
-   }
+   } */
    .surfacelaptop{
       flex-direction: column;
       height: auto;
@@ -377,5 +378,5 @@ a{
    .gp-buttons button,#watch{
       width: 80%;
       margin-bottom: 10px;
-   }
+   
 }
