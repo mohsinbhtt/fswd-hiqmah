@@ -60,3 +60,24 @@ if (age < 5) {
 
 
 console.log("Final Ticket Price:", "₹" + ticketPrice);
+
+
+let grade = "c";
+        switch (grade) {
+            case "a":
+            console.log("Pass");
+            break;
+
+          case "b":
+            console.log("Average");
+            break;
+
+          case "c":
+            console.log("Nearly Fail");
+            break;
+
+          default:
+            console.log("Fail");
+            break;
+        }
+         
