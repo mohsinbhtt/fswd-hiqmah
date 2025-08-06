@@ -354,6 +354,9 @@ a{
       width: 80%;
       margin-bottom: 10px;
    }
+   footer{
+      padding-inline: 20px;
+   }
 }
 @media(max-width:1200px){
    .gamepass{
