@@ -1,8 +1,6 @@
-
 // let age = 28;
-// let weight = 68;  
-// let height = 1.72; 
-
+// let weight = 68;
+// let height = 1.72;
 
 // let bmi= weight / (height * height);
 // console.log(bmi)
@@ -27,7 +25,6 @@
 //     console.log('odd number')
 // }
 
-
 // let age = prompt('enter your age');
 // let isStudent = prompt('Are you a student').toLowerCase();
 // let isWeekend = prompt('Is it a Weekend?').toLowerCase();
@@ -46,8 +43,8 @@
 
 // if (age < 5) {
 //   ticketPrice = 0;
-// } else { 
-  
+// } else {
+
 //   let standardPrice;
 //   if (isWeekend) {
 //     standardPrice = 300;
@@ -55,25 +52,21 @@
 //     standardPrice = 200;
 //   }
 
-  
 //   if (age >= 60) {
 
 //     ticketPrice = standardPrice * 0.7;
 //   } else if (isStudent && !isWeekend) {
-   
+
 //     ticketPrice = standardPrice * 0.5;
 //   } else {
-   
+
 //     ticketPrice = standardPrice;
 //   }
 // }
 
-
 // console.log("Final Ticket Price:", "₹" + ticketPrice);
 
-
 // // /////////// grade check ////////
-
 
 // let grade = "c";
 //          switch (grade) {
@@ -93,57 +86,62 @@
 //              console.log("Fail");
 //              break;
 //         }
-    //     function displayWelcomeMessage(boardingEmployee, gender) {
+//     function displayWelcomeMessage(boardingEmployee, gender) {
 
-    //     return(
-    //       `Welcome ${ gender == "M" ? "Mr" : "Miss" } ${boardingEmployee} on board, We are happy to join you`
-    //     );
-    //   }
+//     return(
+//       `Welcome ${ gender == "M" ? "Mr" : "Miss" } ${boardingEmployee} on board, We are happy to join you`
+//     );
+//   }
 
-    //   console.log("Hi there");
-    //   let onBoardEmployee = "Mohsin";
-    //   let gender = "M";
+//   console.log("Hi there");
+//   let onBoardEmployee = "Mohsin";
+//   let gender = "M";
 
-    //   let output=displayWelcomeMessage(onBoardEmployee, gender)
-      
-    //  console.log (output)
+//   let output=displayWelcomeMessage(onBoardEmployee, gender)
 
-        ////////Task 1////////
+//  console.log (output)
+
+////////Task 1////////
+// getFinalPrice -< cartAmount: Number, hasCoupon: Boolean, isFirstPurchase: boolean
 function getFinalPrice(cartAmount, hasCoupon, isFirstPurchase) {
-   
-    if (typeof cartAmount !== 'number' || cartAmount < 0) {
-        return "Invalid cart amount";
-    }
+  // cartAmount : 600, finalAmount: 600
+  // hasCoupon : boolean -< false
+  let finalAmount = cartAmount;
+  // Base Condition
+  if (typeof cartAmount != "number" || cartAmount < 0) {
+    return "Invalid cart amount";
+  }
+  // Base Discounts
+  if (cartAmount >= 500 && cartAmount <= 999) {
+    finalAmount -= cartAmount * 0.1; // 10%;
+    // finalAmount = finalAmount - cartAmount * 0.1;
+  }
+  if (cartAmount >= 1000 && cartAmount <= 1999) {
+    finalAmount -= cartAmount * 0.15;
+  }
+  if (cartAmount >= 2000) {
+    finalAmount -= cartAmount * 0.25;
+  }
 
-    let finalAmount = cartAmount;
+  //   if customer has coupon
+  if (hasCoupon) {
+    finalAmount -= 100;
+  }
 
-   
-    if (cartAmount >= 500 && cartAmount <= 999) {
-        finalAmount *= 0.90; 
-    } else if (cartAmount >= 1000 && cartAmount <= 1999) {
-        finalAmount *= 0.85; 
-    } else if (cartAmount >= 2000) {
-        finalAmount *= 0.75; 
-    }
+  //   if customer has first purchase
+  if (isFirstPurchase) {
+    finalAmount -= finalAmount * 0.05;
+  }
 
-    
-    if (hasCoupon) {
-        finalAmount -= 100;
-    }
+  //   GST 18%
 
-    
-    if (isFirstPurchase) {
-        finalAmount *= 0.95; 
-    }
+  finalAmount += finalAmount * 0.18;
 
-    
-    finalAmount *= 1.18;
-
-    
-    return Number(finalAmount.toFixed(2));
+  return finalAmount.toFixed(2);
+  //   toFixed(2)
 }
-console.log(getFinalPrice(600, false, false));     
-console.log(getFinalPrice(1100, true, true));      
-console.log(getFinalPrice(2400, true, false));     
-console.log(getFinalPrice(300, true, true));      
-console.log(getFinalPrice(-100, false, false));    
+console.log(getFinalPrice(600, false, false));
+console.log(getFinalPrice(1100, true, true));
+console.log(getFinalPrice(2400, true, false));
+console.log(getFinalPrice(300, true, true));
+console.log(getFinalPrice(-100, false, false));
