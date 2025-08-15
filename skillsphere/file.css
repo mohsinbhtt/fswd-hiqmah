@@ -172,4 +172,14 @@
       .hero-text {
         max-width: 100%;
       }
+       nav ul {
+       display: none;
+    }
+     @media (max-width: 480px) {
+        hero-text h1 {
+        font-size: 2rem;
+      }
+      .hero img {
+        max-width: 280px;
+     }
     }
