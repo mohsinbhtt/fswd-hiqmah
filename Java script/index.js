@@ -20,7 +20,7 @@
 // }
 // let input1 = prompt('enter a number')
 // if(Number (input1) %2 === 0){
-//   console.log('its a even numbr')
+//   console.log('its a even number')
 // }else{
 //     console.log('odd number')
 // }
@@ -145,9 +145,3 @@
 // console.log(getFinalPrice(2400, true, false));
 // console.log(getFinalPrice(300, true, true));
 // console.log(getFinalPrice(-100, false, false));
-
-
-
-
-
-
