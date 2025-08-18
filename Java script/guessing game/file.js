@@ -5,7 +5,7 @@ const guessInput = document.querySelector('.guess');
 const checkBtn = document.querySelector('.check-btn');
 const message = document.querySelector('.message');
 const attemptsText = document.querySelector('.attempts');
-
+const winDisplay = document.querySelector('.win');
 checkBtn.addEventListener('click', function () {
   const userGuess = Number(guessInput.value);
 
@@ -16,9 +16,16 @@ checkBtn.addEventListener('click', function () {
 
   attempts++;
   attemptsText.textContent = `Attempts: ${attempts}`;
+  function isClose() {
+    return Math.abs(secretNumber - userGuess) <= 2;
+  }
+  // console.log(isClose());
 
   if (userGuess === secretNumber) {
     message.textContent = ` Correct! The number was ${secretNumber}.`;
+    winDisplay.style.display = 'block';
+  } else if (isClose()) {
+    message.textContent = 'you are close';
   } else if (userGuess < secretNumber) {
     message.textContent = 'Too low! Try again.';
   } else {

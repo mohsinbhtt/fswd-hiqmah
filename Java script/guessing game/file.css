@@ -30,3 +30,7 @@
       font-size: 1.1rem;
       margin-top: 15px;
     }
+
+    .win{
+      display: none;
+    }
