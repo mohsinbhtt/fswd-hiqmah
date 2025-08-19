@@ -9,16 +9,27 @@
 </head>
 
 <body>
+
     <h1 class="win">Congratulations!!! You Won</h1>
     <h2>Number Guessing Game</h2>
-    <p>Guess a number between 1 and 20</p>
+    <div class="options">
+        <input type="radio" id="option1" name="myChoice" value="choiceA">
+        <label for="option1">Easy</label><br>
+        <input type="radio" id="option2" name="myChoice" value="choiceB">
+        <label for="option2">Medium</label><br>
+        <input type="radio" id="option3" name="myChoice" value="choiceC">
+        <label for="option3">Hard</label><br>
+    </div>
+    <!-- <p>Guess a number between 1 and 20</p> -->
 
     <input type="number" class="guess">
     <button class="check-btn">Check</button>
+    <button class="reset-btn" type="button">Reset</button>
 
     <p class="message"></p>
     <p class="attempts">Attempts: 0</p>
     <script src="./file.js"></script>
+
 </body>
 
 </html>
