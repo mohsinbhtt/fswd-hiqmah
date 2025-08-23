@@ -14,38 +14,47 @@ const hard = document.querySelector('#option3');
 
 easy.addEventListener('change', function () {
   message.textContent = 'Guess a number between 1 and 20';
-  secretNumber = null;
+  // secretNumber = null;
+  generateSecretNumber(20);
 });
 
 medium.addEventListener('change', function () {
   message.textContent = 'Guess a number between 1 and 50';
-  secretNumber = null;
+  // secretNumber = null;
+  generateSecretNumber(50);
 });
 
 hard.addEventListener('change', function () {
   message.textContent = 'Guess a number between 1 and 100';
-  secretNumber = null;
+  // secretNumber = null;
+  generateSecretNumber(100);
 });
 
-function generateSecretNumber() {
-  if (easy.checked) {
-    return Math.floor(Math.random() * 20) + 1;
-  } else if (medium.checked) {
-    return Math.floor(Math.random() * 50) + 1;
-  } else if (hard.checked) {
-    return Math.floor(Math.random() * 100) + 1;
-  } else {
-    message.textContent = 'Please select a difficulty first';
-    return null;
-  }
+function generateSecretNumber(max_number) {
+  // if (easy.checked) {
+  //   return Math.floor(Math.random() * 20) + 1;
+  // } else if (medium.checked) {
+  //   return Math.floor(Math.random() * 50) + 1;
+  // } else if (hard.checked) {
+  //   return Math.floor(Math.random() * 100) + 1;
+  // } else {
+  // message.textContent = 'Please select a difficulty first';
+  //   return null;
+  // }
+  console.log(max_number);
+  secretNumber = Math.floor(Math.random() * max_number) + 1;
 }
 
 checkBtn.addEventListener('click', function () {
   if (secretNumber === null) {
-    secretNumber = generateSecretNumber();
-    if (secretNumber === null) return;
+    // secretNumber = generateSecretNumber();
+    message.textContent = 'Please select a difficulty first';
+
+    return;
   }
   const userGuess = Number(guessInput.value);
+
+  // try
 
   if (!userGuess || userGuess < 1) {
     message.textContent = 'Please enter a valid number.';
@@ -71,14 +80,15 @@ checkBtn.addEventListener('click', function () {
     message.textContent = 'Too high! Try again.';
   }
 });
+
 resetBtn.addEventListener('click', function () {
   attemptsText.textContent = `Attempts: ${(attempts = 0)}`;
   message.textContent = '';
   guessInput.value = '';
   body.style.backgroundColor = '';
   winDisplay.style.display = 'none';
-  easy.checked = 'false';
-  medium.checked = 'false';
-  hard.checked = 'false';
+  easy.checked = false;
+  medium.checked = false;
+  hard.checked = false;
   secretNumber = null;
 });
