@@ -1,0 +1,17 @@
+.answer {
+  display: none;
+  margin-left: 20px;
+  color: #2e3988;
+}
+.question {
+  font-size: larger;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 10px 0;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
