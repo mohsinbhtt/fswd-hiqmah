@@ -66,8 +66,6 @@
 
 // console.log("Final Ticket Price:", "₹" + ticketPrice);
 
-// // /////////// grade check ////////
-
 // let grade = "c";
 //          switch (grade) {
 //              case "a":
@@ -101,20 +99,18 @@
 
 //  console.log (output)
 
-////////Task 1////////
-//getFinalPrice -< cartAmount: Number, hasCoupon: Boolean, isFirstPurchase: boolean
+// getFinalPrice -< cartAmount: Number, hasCoupon: Boolean, isFirstPurchase: boolean
 // function getFinalPrice(cartAmount, hasCoupon, isFirstPurchase) {
-//   // cartAmount : 600, finalAmount: 600
-//   // hasCoupon : boolean -< false
+
 //   let finalAmount = cartAmount;
-//   // Base Condition
+
 //   if (typeof cartAmount != "number" || cartAmount < 0) {
 //     return "Invalid cart amount";
 //   }
-//   // Base Discounts
+
 //   if (cartAmount >= 500 && cartAmount <= 999) {
 //     finalAmount -= cartAmount * 0.1; // 10%;
-//     // finalAmount = finalAmount - cartAmount * 0.1;
+
 //   }
 //   if (cartAmount >= 1000 && cartAmount <= 1999) {
 //     finalAmount -= cartAmount * 0.15;
@@ -123,22 +119,18 @@
 //     finalAmount -= cartAmount * 0.25;
 //   }
 
-//   //   if customer has coupon
 //   if (hasCoupon) {
 //     finalAmount -= 100;
 //   }
 
-//   //   if customer has first purchase
 //   if (isFirstPurchase) {
 //     finalAmount -= finalAmount * 0.05;
 //   }
 
-//   //   GST 18%
-
 //   finalAmount += finalAmount * 0.18;
 
 //   return finalAmount.toFixed(2);
-//   //   toFixed(2)
+
 // }
 // console.log(getFinalPrice(600, false, false));
 // console.log(getFinalPrice(1100, true, true));
