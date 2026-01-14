@@ -1,0 +1,50 @@
+*{
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+}
+.slides{
+    width: 100%;
+    /* height: 30dvh; */
+    position: absolute;
+}
+.slide{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+    position: absolute;
+    border: 2px solid gray;
+    background: purple;
+}
+.btn {
+    position: absolute;
+    display: flex;
+    left: 40%;
+    bottom: 3rem;
+    padding: 1rem 2rem;
+    gap: 2rem;
+    border: 2px solid gary;
+    background: rgba(255, 192, 203, 0.7);
+}
+button{
+    padding: 1rem;
+    background: blueviolet;
+}
+#two{
+    background: rgb(178, 161, 34);
+}
+#three{
+    background: firebrick;
+}
+#one{
+    background: rgb(34, 178, 39);
+}
+#four{
+    background: rgb(34, 39, 178);
+}
+#five{
+    background: rgb(34, 161, 178);
+}

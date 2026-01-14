@@ -1,0 +1,20 @@
+{
+	"name": "todo-api",
+	"version": "1.0.0",
+	"description": "Our fisrt backend API",
+	"main": "index.js",
+	"type": "module",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Sarwar Kawoosa",
+	"license": "ISC",
+	"dependencies": {
+		"dotenv": "^17.2.3",
+		"express": "^5.2.1",
+		"mongodb": "^7.0.0",
+		"mongoose": "^9.0.2",
+		"morgan": "^1.10.1",
+		"nodemon": "^3.1.11"
+	}
+}

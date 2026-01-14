@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./stlye.css" />
+    <link rel="stylesheet" href="./welcome.html" />
+    <title>Login</title>
+  </head>
+  <body>
+    <img src="./images/benjamin-davies-Zm2n2O7Fph4-unsplash.jpg" alt="" />
+    <div class="container">
+      <div class="login-box">
+        <h1 style="font: italic small-caps bold 36px/2 cursive">Login Here!</h1>
+        <div class="detail-box" id="userid">
+          <input type="text" name="username" id="username" required />
+          <span>Username*</span>
+        </div>
+        <div class="userNotFound"><p style="font: italic small-caps bold 12px/2 cursive"">User Not Found</p></div>
+        <div class="detail-box" id="pswd">
+          <input type="password" name="password" id="password" required />
+          <span>Password*</span>
+        </div>
+        <div class="Incorrect-password"><p style="font: italic small-caps bold 12px/2 cursive"">Incorrect Password</p></div>
+
+        <button onclick="welcome()">Login</button>
+      </div>
+    </div>
+    <div class="welcome-text"><p>Welcome</p></div>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(207, 206, 206);
+}
+.container{
+  min-width: 40rem ;
+  /* border: 2px solid black; */
+  border-radius: 20px;
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: column;
+}
+.input-box{
+  width: 100%;
+  /* padding: 5px; */
+  display: flex;
+  justify-content: space-between;
+}
+.input-field{
+  width: 80%;
+  border-radius: 30px;
+  padding: 5px;
+}
+.input-field::placeholder{
+  color: #2ea3b5;
+  font-size: larger;
+  letter-spacing: 2px;
+  font-style: italic;
+}
+.add-btn{
+  background: rgb(185, 229, 119);
+}
+.todo-container{
+  width: 100%;
+ margin-top: 3rem;
+ 
+ padding: 12px;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ gap: 1rem;
+}
+.todo-container.active-border{
+  border: 3px solid black;
+ border-radius: 30px;
+ background-color: rgba(90, 122, 122, 0.795);
+}
+.todo-list{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  
+}
+.todos{
+  width: 70%;
+  font-size: larger;
+  font-weight: 600;
+}
+.dlt-btn{
+  background: rgb(80, 10, 10);
+}
+.lineThrough{
+  text-decoration: line-through;
+}

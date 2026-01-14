@@ -1,0 +1,13 @@
+.nav-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    border:  2px solid red;
+    border-radius: 30px;
+    gap: 2rem;
+}
+button{
+    padding: 10px;
+    border: 1px solid green;
+}

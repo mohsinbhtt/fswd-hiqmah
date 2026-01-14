@@ -1,0 +1,88 @@
+
+		<div className='min-h-screen w-full bg-gray-100 p-8'>
+			<header className='mb-8'>
+				<h1 className='text-4xl font-extrabold text-gray-800'>
+					Website Analytics Dashboard
+				</h1>
+				<p className='text-gray-500 mt-1'>
+					Overview of your website performance.
+				</p>
+			</header>
+
+			{/* Stats Grid */}
+			<div className='grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 mb-8'>
+				<StatCard
+					title='Total Visitors'
+					value='45,231'
+					icon={<i className='fas fa-users fa-2x'></i>} // Using Font Awesome icons (optional)
+					change='+12.5%'
+				/>
+				<StatCard
+					title='Page Views'
+					value='150,897'
+					icon={<i className='fas fa-eye fa-2x'></i>}
+					change='+8.1%'
+				/>
+				<StatCard
+					title='Bounce Rate'
+					value='35.4%'
+					icon={<i className='fas fa-chart-line fa-2x'></i>}
+					change='-2.1%'
+				/>
+				<StatCard
+					title='Avg. Duration'
+					value='3m 15s'
+					icon={<i className='fas fa-clock fa-2x'></i>}
+					change='+0.5%'
+				/>
+			</div>
+
+			{/* Main Chart Area */}
+			<div className='bg-white p-6 rounded-lg shadow-lg mb-8'>
+				<h2 className='text-xl font-semibold text-gray-800 mb-4'>
+					Traffic Over Time
+				</h2>
+				{/* Placeholder for a chart component (e.g., Line Chart from Recharts) */}
+				<div className='h-80 flex items-center justify-center bg-gray-50 rounded-md'>
+					{/* Replace this div content with your actual chart component */}
+					<p className='text-gray-500'>
+						Analytics Chart Placeholder (e.g., from Recharts/Chart.js)
+					</p>
+					{/* <AnalyticsChart data={...} /> */}
+				</div>
+			</div>
+
+			{/* Secondary Metrics Grid */}
+			<div className='grid grid-cols-1 lg:grid-cols-3 gap-6'>
+				<div className='bg-white p-6 rounded-lg shadow-lg lg:col-span-2'>
+					<h2 className='text-xl font-semibold text-gray-800 mb-4'>
+						Top Pages by Views
+					</h2>
+					<ul className='divide-y divide-gray-200'>
+						{['/home', '/pricing', '/blog/post-1', '/contact'].map(
+							(page, index) => (
+								<li
+									key={index}
+									className='py-3 flex justify-between items-center'>
+									<span>{page}</span>
+									<span className='font-medium text-blue-600'>
+										{(Math.random() * 10000).toFixed(0)} views
+									</span>
+								</li>
+							)
+						)}
+					</ul>
+				</div>
+
+				<div className='bg-white p-6 rounded-lg shadow-lg'>
+					<h2 className='text-xl font-semibold text-gray-800 mb-4'>
+						Traffic Sources
+					</h2>
+					{/* Placeholder for a chart component (e.g., Pie Chart from Recharts) */}
+					<div className='h-64 flex items-center justify-center bg-gray-50 rounded-md'>
+						<p className='text-gray-500'>Pie Chart Placeholder</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	

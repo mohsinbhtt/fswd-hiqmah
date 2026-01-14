@@ -1,0 +1,20 @@
+.btn-grp{
+    display: flex;
+    gap: 3rem;
+}
+.btn{
+    padding: 2rem 1rem;
+    background-color: aqua;
+}
+.content{
+    padding: 2rem;
+    background-color:blue ;
+    z-index: 15;
+}
+.hidden {
+    display: none;
+}
+.overlay{
+z-index: 5;
+backdrop-filter: blur(10px);
+}

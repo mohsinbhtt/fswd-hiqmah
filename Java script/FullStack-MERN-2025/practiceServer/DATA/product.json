@@ -1,0 +1,98 @@
+[
+	{
+		"id": 1,
+
+		"name": "Wireless Mouse",
+
+		"description": "Ergonomic wireless mouse with 1600 DPI sensitivity.",
+
+		"price": 599,
+
+		"category": "Electronics",
+
+		"stock": 40,
+
+		"images": "https://dummyimage.com/300x300/000/fff&text=Wireless+Mouse"
+	},
+	{
+		"id": 2,
+		"name": "Mechanical Keyboard",
+		"description": "RGB mechanical keyboard with blue switches.",
+		"price": 2499,
+		"category": "Electronics",
+		"stock": 15,
+		"images": "https://dummyimage.com/300x300/000/fff&text=Mechanical+Keyboard"
+	},
+	{
+		"id": 3,
+		"name": "Bluetooth Headphones",
+		"description": "Over-ear Bluetooth headphones with 20-hour battery life.",
+		"price": 1999,
+		"category": "Electronics",
+		"stock": 25,
+		"images": "https://dummyimage.com/300x300/000/fff&text=Bluetooth+Headphones"
+	},
+	{
+		"id": 4,
+		"name": "Running Shoes",
+		"description": "Comfortable running shoes for daily training.",
+		"price": 1799,
+		"category": "Footwear",
+		"stock": 30,
+		"images": "https://dummyimage.com/300x300/000/fff&text=Running+Shoes"
+	},
+	{
+		"id": 5,
+		"name": "Water Bottle",
+		"description": "1 liter stainless steel insulated water bottle.",
+		"price": 299,
+		"category": "Home",
+		"stock": 80,
+		"images": "https://dummyimage.com/300x300/000/fff&text=Water+Bottle"
+	},
+	{
+		"id": 6,
+		"name": "Backpack",
+		"description": "Water-resistant laptop backpack with multiple compartments.",
+		"price": 1199,
+		"category": "Bags",
+		"stock": 20,
+		"images": "https://dummyimage.com/300x300/000/fff&text=Backpack"
+	},
+	{
+		"id": 7,
+		"name": "Smartwatch",
+		"description": "Fitness smartwatch with heart rate and sleep tracking.",
+		"price": 3499,
+		"category": "Electronics",
+		"stock": 10,
+		"images": "https://dummyimage.com/300x300/000/fff&text=Smartwatch"
+	},
+	{
+		"id": 8,
+		"name": "Desk Lamp",
+		"description": "LED desk lamp with adjustable brightness.",
+		"price": 499,
+		"category": "Home",
+		"stock": 50,
+		"images": "https://dummyimage.com/300x300/000/fff&text=Desk+Lamp"
+	},
+	{
+		"id": 9,
+		"name": "Notebook",
+		"description": "200-page ruled notebook.",
+		"price": 99,
+		"category": "Stationery",
+		"stock": 150,
+		"images": "https://dummyimage.com/300x300/000/fff&text=Notebook"
+	},
+	{
+		"id": 10,
+		"name": "USB-C Charger",
+		"description": "20W fast USB-C charger compatible with Android and iPhone.",
+		"price": 899,
+		"category": "Electronics",
+		"stock": 35,
+		"images": "https://dummyimage.com/300x300/000/fff&text=USB-C+Charger"
+	}
+]

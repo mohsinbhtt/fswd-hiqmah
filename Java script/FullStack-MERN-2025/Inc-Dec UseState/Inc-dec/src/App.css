@@ -1,0 +1,40 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.number{
+  width: fit-content;
+  padding: 10px;
+  background: rgb(180, 180, 180);
+  color: black;
+  font-size: 5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  justify-self: center;
+  border-radius: 999px;
+}
+.inc{
+  width: fit-content;
+  padding: 10px;
+  background: rgb(180, 180, 180);
+  color: black;
+  font-size: xx-large;
+  font-weight: 700;
+  margin-inline: 30px;
+}
+.dec{
+  width: fit-content;
+  padding: 10px;
+  background: rgb(180, 180, 180);
+  color: black;
+  font-size: xx-large;
+  font-weight: 700;
+}

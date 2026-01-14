@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-image{
+    height: 80vh;
+    width: 100%;
+    border: 3px solid black;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    background-image: url('./images/burak-babayigit-SQFclH9qqTs-unsplash.jpg');
+    object-fit:cover;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+.thumbnail-container {
+    height: 25dvh;
+    width: 100%;
+    border: 3px solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+#image-one{
+background-image: url('./images/burak-babayigit-SQFclH9qqTs-unsplash.jpg');
+width: 16rem;
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+}
+#image-two{
+background-image: url('./images/eiliv-aceron-M-pEl_nv1Q0-unsplash.jpg');
+width: 16rem;
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+}
+#image-three{
+background-image: url('./images/fatima-akram-uU0Anw-8Vsg-unsplash.jpg');
+width: 16rem;
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+}
+#image-four{
+background-image: url('./images/shreyak-singh-0j4bisyPo3M-unsplash.jpg');
+width: 16rem;
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+}
+
+.active {
+    border: 3px solid rgb(30, 0, 255);
+}

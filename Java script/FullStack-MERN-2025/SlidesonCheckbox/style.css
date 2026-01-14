@@ -1,0 +1,76 @@
+*{
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+}
+/* .slides{
+    width: 100vw;
+    position: absolute;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: row;
+} */
+.slide{
+    position: absolute;
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+    border: 2px solid gray;
+}
+.btn {
+    position: absolute;
+    display: flex;
+    left: 40%;
+    bottom: 3rem;
+    padding: 1rem 2rem;
+    gap: 2rem;
+    /* border: 2px solid gary;
+    background: rgba(255, 192, 203, 0.7); */
+}
+button{
+    padding: 1rem;
+    background: blueviolet;
+}
+#two{
+    background: rgb(178, 161, 34);
+}
+#three{
+    background: firebrick;
+}
+#one{
+    background: rgb(34, 178, 39);
+}
+#four{
+    background: rgb(34, 39, 178);
+}
+#five{
+    background: rgb(34, 161, 178);
+}
+.chk{
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    color: black;
+}
+.dot-container{
+    position: absolute;
+    top: 35%;
+    left: 45%;
+    display: flex;
+    gap: 1rem;
+
+}
+.circle-dots{
+    border: 1px solid black;
+    border-radius: 50%;
+    background: rgb(180, 178, 178);
+    height: 1px;
+    width: 1px;
+}
+.active-dot{
+   background-color: rgb(95, 94, 94);
+   border: 2px solid black;
+}

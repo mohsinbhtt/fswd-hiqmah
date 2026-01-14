@@ -1,0 +1,11 @@
+{
+  "name": "basic-node-js",
+  "version": "1.0.0",
+  "description": " Basic Node.js Web Server with Routing, File Handling, and Simple Templating",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sarwar",
+  "license": "ISC"
+}

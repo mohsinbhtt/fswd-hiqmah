@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Image Selection</title>
+</head>
+<body>
+    <div class="main-image"></div>
+    
+    <div class="thumbnail-container">
+    <div class="thumbnail active" id="image-one" onclick="this.classList.add('active');
+            document.getElementById('image-two').classList.remove('active'); 
+            document.getElementById('image-three').classList.remove('active'); 
+            document.getElementById('image-four').classList.remove('active');"></div>
+    <div class="thumbnail" id="image-two" onclick="this.classList.add('active');
+            document.getElementById('image-one').classList.remove('active'); 
+            document.getElementById('image-three').classList.remove('active'); 
+            document.getElementById('image-four').classList.remove('active');"></div>
+    <div class="thumbnail" id="image-three" onclick="this.classList.add('active');
+            document.getElementById('image-two').classList.remove('active'); 
+            document.getElementById('image-one').classList.remove('active'); 
+            document.getElementById('image-four').classList.remove('active');"></div>
+    <div class="thumbnail" id="image-four" onclick="this.classList.add('active');
+            document.getElementById('image-two').classList.remove('active'); 
+            document.getElementById('image-three').classList.remove('active'); 
+            document.getElementById('image-one').classList.remove('active');"></div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

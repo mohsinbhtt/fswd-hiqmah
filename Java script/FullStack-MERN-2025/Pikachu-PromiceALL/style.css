@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 32px;
+}
+body{
+    background: linear-gradient(0deg, rgba(68, 67, 67, 0.697),rgba(51, 51, 51, 0.932),rgb(48, 48, 48),rgb(129, 129, 129));
+    background-repeat: no-repeat;
+    width: 100vw;
+}
+.heading{
+    padding: 5px;
+    background: linear-gradient(45deg, black, pink, red, blue , orange);
+    width:12rem;
+    background-clip:text;
+    justify-self:center;
+    margin-top: 5%;
+}
+h1 {
+    font-family: "Passero One", sans-serif;    font-weight: 400;
+    font-style: normal;    color: transparent;
+    /* text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue; */
+    justify-self:center
+}
+.display-type{
+    display: flex;
+    gap: 1rem;
+    justify-self: center;
+    /* margin-top: 10%; */
+}
+span{
+    text-decoration: underline;
+}
+.cards-container{
+    margin-top: 1rem;
+    margin-inline: 8px;
+    border: 2px solid black;
+    box-shadow: 0 0 13px 3px white;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: 0 0 8px 2px white;
+    
+}
+.pagination-arrows{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    margin-top: 8px;
+    gap: 2rem;
+}
+.flexstyle:hover, .gridstyle:hover{
+    font-size: larger;
+    text-shadow: 0 0 5px #f0f1f4,
+    0 0 10px #c0c4d8,
+    0 0 20px #7c4dff,
+    0 0 30px #7c4dff,
+    0 0 40px #651fff; ;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    padding: 2rem;
+}

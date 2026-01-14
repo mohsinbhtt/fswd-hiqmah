@@ -1,0 +1,29 @@
+@import 'tailwindcss';
+.activeLink {
+	text-decoration: underline;
+	color: rgb(153, 143, 51);
+	font-weight: 700;
+	background: linear-gradient(
+		90deg,
+		rgba(128, 0, 128, 0.52),
+		rgba(0, 0, 0, 0.523)
+	);
+}
+@media (max-width: 768px) {
+	.condition-wind-humidity {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
+	.temperature {
+		margin-top: 2rem;
+	}
+	.condition-icon,
+	.wind,
+	.humidity {
+		width: 70%;
+	}
+	.info-container {
+		width: 100%;
+	}
+}

@@ -1,0 +1,75 @@
+/* Reset and base setup */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(
+    180deg,
+    rgba(165, 42, 42, 0.7),
+    pink,
+    gray,
+    rgba(255, 255, 0, 0.6),
+    rgba(0, 0, 255, 0.5)
+  );
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Container for all flashcards */
+.outer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+/* Flashcard wrapper */
+.flashcards {
+  width: 320px;
+  height: 150px;
+  perspective: 1000px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: rgba(207, 200, 200, 0.802);
+  border: 2px solid black;
+}
+.flashcard-front{
+  font-size: x-large;
+  font-weight: 700;
+}
+.flashcard-back{
+  /* color: rgba(207, 200, 200, 0.041); */
+  transform: rotateY(90deg);
+}
+.flashcards.selected .flashcard-front{
+  transition: all 1s ease-in-out;
+  transform: rotateY(90deg);
+  color: rgba(207, 200, 200, 0.041);
+
+}
+.flashcards.selected .flashcard-back{
+  transition: all 1s ease-in-out;
+  transform: rotateY(0deg);
+  /* color: rgba(207, 200, 200, 0.041); */
+  /* color: black; */
+
+}
+
+

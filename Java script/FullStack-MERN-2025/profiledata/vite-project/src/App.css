@@ -1,0 +1,37 @@
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.profile{
+  padding: 10px;
+  border: 2px solid gray;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 10px;
+}
+.image{
+border-radius: 999px;
+height: 50px;
+width: 50px;
+object-fit: cover;
+object-position: center;
+aspect-ratio: 1/1;
+}
+.name,.description,.followers,.following{
+  padding: 4px;
+  background-color: rgba(127, 255, 212, 0.494);
+  font-weight: 800;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: larger;
+  color: royalblue;
+  border-radius: 30px;
+  border: 2px solid;
+}

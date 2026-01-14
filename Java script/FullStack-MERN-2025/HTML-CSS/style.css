@@ -1,0 +1,117 @@
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f8ff; 
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 40px;
+}
+
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+}
+
+
+.btn {
+  background-color: #3498db;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color:rgba(123,321,211,0.5);
+}
+
+.btn:active {
+  background-color: #1c5980;
+}
+
+
+a {
+  color: #e74c3c;
+  text-decoration: none;
+}
+
+a:hover {
+    font-size: larger;
+    background: linear-gradient(45deg, #ff0000, #0000ff);
+
+}
+
+a:visited {
+  color: #8e44ad;
+}
+
+
+.info-box {
+  border: 2px solid #95a5a6;
+  padding: 15px;
+  margin: 20px 0;
+  background-color: #ecf0f1;
+  width: 100%;
+}
+
+
+.contact-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #f39c12;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+}
+
+.sticky-button{
+    position: sticky;
+    top: 30%;
+    right: 20px;
+    background-color: #5bcc2e4d;
+    padding: 20px 20px;
+    border-radius: 30%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+.second {
+    margin-top: 8rem;
+}
+

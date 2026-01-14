@@ -1,0 +1,160 @@
+@import "tailwindcss";
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #434343;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+/* Search Input */
+.input-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  }
+
+.input-container input {
+  width: 350px;
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: #e3e2e2;
+  color: #000000;
+  transition: 0.3s ease;
+  border: 1px solid #333;
+}
+
+.input-container input:focus {
+  border-color: #ffcc00;
+  box-shadow: 0 0 6px #ffcc00;
+}
+h2 {
+  color: #ffcc00;
+  font-size: 2rem;
+  width: fit-content;
+  margin: 2rem 0 ;
+  
+}
+/* Heading */
+.movie-recommendation {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 32px;
+  color: #ffcc00;
+  letter-spacing: 1px;
+}
+
+/* Movie List Container */
+.movie-list {
+  display: flex;
+
+  gap: 25px;
+  padding: 10px 30px;
+}
+
+/* Movie Card */
+.movie-item {
+  background: #526d6966;
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 15px;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.movie-item:hover {
+  transform: translateY(-5px);
+  border-color: #ffcc00;
+  box-shadow: 0 0 10px #ffcc00;
+}
+
+/* Movie Title */
+.movie-title {
+  font-size: 16px;
+  line-height: 32px ;
+  height: 64px;
+  margin-bottom: 12px;
+  font-weight: 600;
+  color: #ffcc00;
+}
+
+
+/* Movie Poster */
+.movie-poster img {
+  width: 100%;
+  height: 320px;
+  /* object-fit: contain; */
+}
+
+/* Movie Plot */
+.movie-plot {
+  margin-top: 12px;
+  font-size: 14px;
+  line-height: 1.4rem;
+  max-height: 2.8rem;
+  overflow: hidden;
+  color: #d6d6d6;
+  transition: all 0.2s ease-in-out;
+ display: flex;
+ flex-direction: column;
+ align-items: end;
+ text-align: start;
+}
+.expand-plot{
+  overflow: visible;
+  max-height: 9.8rem;
+}
+.read-more {
+  padding: 4px;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  color: blue;
+  background: transparent;
+  transition: none;
+  justify-self: left;
+  display: flex;
+}
+.read-more:focus{
+  outline: none;
+  border: none;
+}
+.read-more:hover{
+    text-shadow: 0 0 8px white;
+}
+/* Stars Component */
+.stars {
+  margin-top: 40px;
+}
+
+/* Individual Stars */
+.fa-star {
+  cursor: pointer;
+  font-size: 20px;
+  margin: 0 3px;
+  transition: 0.3s;
+}
+
+.fa-solid.fa-star {
+  color: #ffcc00;
+}
+
+.fa-regular.fa-star {
+  color: #666;
+}
+
+.fa-star:hover {
+  transform: scale(1.2);
+}

@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    /* object-fit: fill; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+}
+.container{
+    height: 50dvh;
+    width: 30vw;
+    backdrop-filter: blur(10px);
+    border-radius: 40px;
+    box-shadow: 0 0 5px rgba(48, 48, 48, 0.791);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-box {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;}
+    
+.detail-box{
+    width: 80%;
+    position: relative;
+}
+input {
+    width: 100%;
+    border-radius: 20px;
+    padding: 6px;
+}
+span{
+    position: absolute;
+    left: 16px;
+    top: 6px;
+    transition: all .6s ease-in-out;
+}
+#userid input:focus + span ,
+#userid input:valid + span {
+    color: rgb(0, 110, 255);
+    left: 16px;
+    transform: translateY(-25px);
+   
+
+  }
+#pswd input:focus + span ,
+#pswd input:valid + span {
+    color: rgb(0, 110, 255);
+    left: 16px;
+    top: -20px;
+  }
+  button{
+    border: 2px solid black;
+    border-radius: 20px;
+    color: black;
+    font-weight: 600;
+    padding:.5rem 2rem ;
+    background: linear-gradient(40deg, grey ,white,grey);
+  }
+  button:hover {
+    box-shadow: 0 0 10px gray;
+    /* transform: scale(1.2); */
+    font-size: 14px;
+    box-shadow: inset 0 0 10px pink;
+  }
+  .userNotFound{
+    display: none;
+    color:red
+  }
+  .Incorrect-password{
+    display: none;
+    color:red
+  }
+  .welcome-text{
+    position: absolute;
+    display: none;
+  }
+  .welcome-text p{
+    font-size: 5rem;
+  }

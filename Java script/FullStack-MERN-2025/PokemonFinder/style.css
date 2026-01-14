@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-size: 16px;
+}
+body{
+    box-sizing: border-box;
+    max-width: 100vw;
+}
+.container{
+    width: 100%;
+    height: 100dvh;
+    background: linear-gradient(rgb(151, 225, 151),rgb(92, 194, 92),rgb(44, 109, 44)85%,rgb(29, 84, 29));
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 5%;
+    position: relative;
+    gap: 2rem;
+}
+#input-text{
+    width: 20%;
+    border-radius: 30px;
+    padding: 8px;
+}
+#input-button{
+    padding: 8px 18px;
+    border-radius: 30px;
+}
+.useless-content{
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+#dim-numbers{
+    font-size: 14rem;
+    font-weight: 700;
+    color: rgba(255, 251, 251, 0.318);
+}
+#poke-image{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    height: 15rem;
+    width: 15rem;
+}
+.name{
+    position: absolute;
+    font-size: 4rem;
+    letter-spacing: 3px;
+    color: white;
+    font-weight: 800;
+    left: 30%;
+    top: 40%;
+}
+.not-character{
+    border: 2px solid black;
+    background: rgba(220, 220, 220, 0.433);
+    display: none;
+    align-items: center ;
+    justify-content: center;
+    font-weight: 800;
+    border-radius: 30px;
+    font-size: larger;
+    font-style: italic;
+    color: red;
+    word-spacing: .6rem;
+    position: absolute;
+    top: 10%;
+    padding: 14px 34px;
+    left: 38%;
+    top: 20%;
+}
+
+.feature-card{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    color: white;
+    font-weight: 800;
+       
+}
+.feature p{
+    word-spacing: 12rem;
+}
+.stats-table{
+    position: absolute;
+    bottom: 30px;
+    left: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.stat-name,
+.stat-value {
+    font-weight: 700;
+    font-size: 15px;
+    color: aliceblue;
+}
+.white-width{
+    background: white;
+}
