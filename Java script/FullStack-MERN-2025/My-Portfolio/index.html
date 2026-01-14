@@ -1,34 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <title>portfolio</title>
-  </head>
-  <body>
-    <div class="background">
-      <!--header starts-->
-      <div class="scrollarrow"><i class="fa-solid fa-arrow-up"></i></div>
-      <div class="header">
-        <!--NAME STARTS HERE-->
-        <div class="name">
-          <div class="caps">S</div>
-          <div class="nm">arwar</div>
-          &nbsp;
-          <div class="caps">K</div>
-          <div class="nm">awoosa</div>
-        </div>
-        <!--NAME ENDS HERE-->
-        <!--DAY-NIGHT ICONS STARTS-->
-        <!-- <div class="day-night">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>portfolio</title>
+</head>
+
+<body>
+  <div class="background">
+    <!--header starts-->
+    <div class="scrollarrow"><i class="fa-solid fa-arrow-up"></i></div>
+    <div class="header">
+      <!--NAME STARTS HERE-->
+      <div class="name">
+        <div class="caps">M</div>
+        <div class="nm">ohsin</div>
+        &nbsp;
+        <div class="caps">B</div>
+        <div class="nm">hat</div>
+      </div>
+      <!--NAME ENDS HERE-->
+      <!--DAY-NIGHT ICONS STARTS-->
+      <!-- <div class="day-night">
           <div class="moon">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -59,9 +57,24 @@
             </svg>
           </div>
         </div> -->
-        <!--DAY-NIGHT ICONS ENDS-->
-        <!--NAV-LINKS FOR DESKTOP SCREEN STARTS -->
-        <div class="navbar">
+      <!--DAY-NIGHT ICONS ENDS-->
+      <!--NAV-LINKS FOR DESKTOP SCREEN STARTS -->
+      <div class="navbar">
+        <ul>
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#skills">SKILLS</a></li>
+          <li><a href="#projects">PROJECTS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </div>
+      <!--NAV-LINKS FOR DESKTOP SCREEN ENDS -->
+      <!--NAV-LINKS FOR MOBILE SCREEN STARTS -->
+      <div class="hamburger">
+        <div class="lines" onclick="toggle()">
+          <span></span><span></span><span></span>
+        </div>
+        <div class="nav-links">
           <ul>
             <li><a href="#home">HOME</a></li>
             <li><a href="#about">ABOUT</a></li>
@@ -70,128 +83,108 @@
             <li><a href="#contact">CONTACT</a></li>
           </ul>
         </div>
-        <!--NAV-LINKS FOR DESKTOP SCREEN ENDS -->
-        <!--NAV-LINKS FOR MOBILE SCREEN STARTS -->
-        <div class="hamburger">
-          <div class="lines" onclick="toggle()">
-            <span></span><span></span><span></span>
-          </div>
-          <div class="nav-links">
-            <ul>
-              <li><a href="#home">HOME</a></li>
-              <li><a href="#about">ABOUT</a></li>
-              <li><a href="#skills">SKILLS</a></li>
-              <li><a href="#projects">PROJECTS</a></li>
-              <li><a href="#contact">CONTACT</a></li>
-            </ul>
-          </div>
-        </div>
-        <!--NAV-LINKS FOR DESKTOP SCREEN ENDS -->
       </div>
-      <!--header ends here-->
-      <!--sections begin-->
-      <section id="home" class="flex">
-        <article class="pic-wraper">
-          <div class="mypic">
-            <img class="img"
-              src="./Picture1.jpg"
-              alt="my pic"
-            />
-            <h1>
-              WEB 
-              DEVELOPER 
-            </h1>
-            <button>Hire Me</button>
-          </div>
-          <div class="box1"></div>
-          <div class="box2"></div>
-        </article>
-        <article class="text-wraper">
-          <div class="text-content">
-            <h1 class="top-text">Hi, Everyone</h1>
-            <h3 class="name-text"><i>sarwar here</i></h3>
-            <h2 class="moving-text"><span id="run-text"></span></h2>
-          </div>
-          <br />
-          <br />
-          <div class="buttons">
-            <a href="./SarwarBashir-FullStack-Resume.pdf"  target="_blank"
-            ><button>
-                <span>Download CV</span>
-              </button></a
-            >
-            <a class="btn" href="#contact">
-              <button><span>Contact</span></button>
-            </a>
-            <a class="btn" href="#about">
-              <button onclick="location.href('#about')">
-                <span>About Me</span>
-              </button>
-            </a>
-          </div>
-        </article>
-      </section>
-      <section id="about" class="flex">
-        <div class="left">
-          <!-- <span>let me introduce</span> -->
-          <h2 class="style-h2">ABOUT ME</h2>
-          <div class="style-h3">
-            <p>
-              I am a <strong>Full-Stack Developer</strong> with hands-on experience in building
-              complete web applications, from intuitive and responsive frontend interfaces to
-              robust, scalable backend systems. I have a strong understanding of application
-              architecture, APIs, databases, and clean code practices, which allows me to
-              develop solutions that are reliable, maintainable, and performance-oriented.
-            </p>
-            
-            <p>
-              Beyond development, I am comfortable working with modern DevOps tools such as
-              <strong>Docker</strong>, <strong>CI/CD pipelines</strong>,
-              <strong>Kubernetes</strong>, and <strong>Ansible</strong>. This enables me to
-              ensure smooth transitions from development to production while maintaining
-              stability and scalability across environments.
-            </p>
-            
-            <p>
-              I enjoy owning products end-to-end, taking responsibility from initial design
-              through deployment and optimization. I continuously refine my skills by building
-              real-world projects and staying aligned with best practices in modern web
-              development.
-            </p>
-            
-          </div>
-          <!-- <button>Home</button> -->
+      <!--NAV-LINKS FOR DESKTOP SCREEN ENDS -->
+    </div>
+    <!--header ends here-->
+    <!--sections begin-->
+    <section id="home" class="flex">
+      <article class="pic-wraper">
+        <div class="mypic">
+          <img class="img" src="./IMG_20230625_132712_747.jpg" alt="my pic" />
+          <h1>
+            WEB
+            DEVELOPER
+          </h1>
+          <button>Hire Me</button>
         </div>
-        <div class="right" id="certifications">
-          <h2>Certifications</h2>
+        <div class="box1"></div>
+        <div class="box2"></div>
+      </article>
+      <article class="text-wraper">
+        <div class="text-content">
+          <h1 class="top-text">Hi, Everyone</h1>
+          <h3 class="name-text"><i>mohsin here</i></h3>
+          <h2 class="moving-text"><span id="run-text"></span></h2>
+        </div>
+        <br />
+        <br />
+        <div class="buttons">
+          <a href="./SarwarBashir-FullStack-Resume.pdf" target="_blank"><button>
+              <span>Download CV</span>
+            </button></a>
+          <a class="btn" href="#contact">
+            <button><span>Contact</span></button>
+          </a>
+          <a class="btn" href="#about">
+            <button onclick="location.href('#about')">
+              <span>About Me</span>
+            </button>
+          </a>
+        </div>
+      </article>
+    </section>
+    <section id="about" class="flex">
+      <div class="left">
+        <!-- <span>let me introduce</span> -->
+        <h2 class="style-h2">ABOUT ME</h2>
+        <div class="style-h3">
+          <p>
+            I am a <strong>Full-Stack Developer</strong> with hands-on experience in building
+            complete web applications, from intuitive and responsive frontend interfaces to
+            robust, scalable backend systems. I have a strong understanding of application
+            architecture, APIs, databases, and clean code practices, which allows me to
+            develop solutions that are reliable, maintainable, and performance-oriented.
+          </p>
 
-          <div class="cert-grid">
-            <div class="cert">
-              <h3>AI/ML Intern</h3>
-              <p>NIT Srinagar</p>
-            </div>
-        
-            <div class="cert">
-              <h3>SQL</h3>
-              <p>Newton School</p>
-            </div>
-        
-            <div class="cert">
-              <h3>CCNA</h3>
-              <p>Cisco Certified Network Associate (Kbit Classes)</p>
-            </div>
-        
-            <div class="cert">
-              <h3>Corporate Readiness Course</h3>
-              <p>CRC</p>
-            </div>
+          <p>
+            Beyond development, I am comfortable working with modern DevOps tools such as
+            <strong>Docker</strong>, <strong>CI/CD pipelines</strong>,
+            <strong>Kubernetes</strong>, and <strong>Ansible</strong>. This enables me to
+            ensure smooth transitions from development to production while maintaining
+            stability and scalability across environments.
+          </p>
+
+          <p>
+            I enjoy owning products end-to-end, taking responsibility from initial design
+            through deployment and optimization. I continuously refine my skills by building
+            real-world projects and staying aligned with best practices in modern web
+            development.
+          </p>
+
+        </div>
+        <!-- <button>Home</button> -->
+      </div>
+      <div class="right" id="certifications">
+        <h2>Certifications</h2>
+
+        <div class="cert-grid">
+          <div class="cert">
+            <h3>AI/ML Intern</h3>
+            <p>NIT Srinagar</p>
           </div>
+
+          <div class="cert">
+            <h3>SQL</h3>
+            <p>Newton School</p>
           </div>
-          <!-- <img class="abt-img"
+
+          <div class="cert">
+            <h3>CCNA</h3>
+            <p>Cisco Certified Network Associate (Kbit Classes)</p>
+          </div>
+
+          <div class="cert">
+            <h3>Corporate Readiness Course</h3>
+            <p>CRC</p>
+          </div>
+        </div>
+      </div>
+      <!-- <img class="abt-img"
           src="./WhatsApp_Image_2024-01-22_at_15.09.57_cdcc9336-removebg-preview.png"
           alt="mypic"
         /> -->
-          <!-- <div class="right-container">
+      <!-- <div class="right-container">
             <div class="liquid-box">
               <svg
               viewBox="0 0 500 500"
@@ -255,231 +248,214 @@
             </svg>
           </div>
           </div> -->
-          
-          <!-- <div class="wiggle">
+
+      <!-- <div class="wiggle">
             <div class="one"><h1>10 years exp</h1></div>
             <div class="two"><h1>10 years exp</h1></div>
             <div class="three"><h1>10 years exp</h1></div>
           </div> -->
-        
-      </section>
-      <section id="skills" class="skills-section">
-        <div style="border-right: 1px;">
 
-          <h2><strong>SKILLS – <span style="color:#8fd3f4;">FRONTEND</span></strong></h2>
-          
-          <ul>
-            <li><strong style="color:#84fab0;">Strong foundation</strong> in HTML, CSS, and JavaScript for responsive and interactive web pages.</li>
-            <li>Understanding of <strong style="color:#84fab0;">React.js fundamentals</strong> including components, JSX, props, state, hooks, and React Router.</li>
-            <li>Knowledge of <strong style="color:#84fab0;">DOM manipulation</strong> and dynamic UI rendering.</li>
-            <li>Understanding of the <strong style="color:#84fab0;">JavaScript Event Loop</strong> and asynchronous behavior.</li>
-            <li>Familiar with responsive design principles using <strong style="color:#84fab0;">Flexbox and Grid</strong>.</li>
-            <li>Experience with <strong style="color:#84fab0;">Tailwind CSS</strong> and awareness of UI libraries.</li>
-            <li>Familiar with <strong style="color:#84fab0;">Git and GitHub</strong> for version control and collaboration.</li>
-            <li>Understanding of debugging using <strong style="color:#84fab0;">browser developer tools</strong>.</li>
-          </ul>
-          
-        </div>
-        <div class="skill-line">
+    </section>
+    <section id="skills" class="skills-section">
+      <div style="border-right: 1px;">
 
-          <h2><strong>SKILLS – <span style="color:#8fd3f4;">BACKEND</span> (Node.js, Express, MongoDB)</strong></h2>
-          
-          <ul>
-            <li>Familiar with developing <strong style="color:#84fab0;">RESTful APIs</strong> using Node.js and Express.js.</li>
-            <li>Understanding of <strong style="color:#84fab0;">CRUD operations</strong> using MongoDB with Mongoose.</li>
-            <li>Knowledge of <strong style="color:#84fab0;">MVC architecture</strong> for backend application structure.</li>
-            <li>Familiar with handling <strong style="color:#84fab0;">POST, GET, PATCH, and DELETE</strong> API requests.</li>
-            <li>Understanding of <strong style="color:#84fab0;">Mongoose schemas and models</strong> for data validation.</li>
-            <li>Knowledge of <strong style="color:#84fab0;">req.body, req.params, and req.query</strong> handling.</li>
-            <li>Familiar with <strong style="color:#84fab0;">filtering, sorting, pagination, and field limiting</strong>.</li>
-            <li>Understanding of <strong style="color:#84fab0;">environment variables</strong> using dotenv.</li>
-            <li>Familiar with <strong style="color:#84fab0;">MongoDB Atlas</strong> integration.</li>
-            <li>Knowledge of <strong style="color:#84fab0;">middleware usage</strong> and API testing using Postman.</li>
-          </ul>
-        </div>
+        <h2><strong>SKILLS – <span style="color:#8fd3f4;">FRONTEND</span></strong></h2>
+
+        <ul>
+          <li><strong style="color:#84fab0;">Strong foundation</strong> in HTML, CSS, and JavaScript for responsive and
+            interactive web pages.</li>
+          <li>Understanding of <strong style="color:#84fab0;">React.js fundamentals</strong> including components, JSX,
+            props, state, hooks, and React Router.</li>
+          <li>Knowledge of <strong style="color:#84fab0;">DOM manipulation</strong> and dynamic UI rendering.</li>
+          <li>Understanding of the <strong style="color:#84fab0;">JavaScript Event Loop</strong> and asynchronous
+            behavior.</li>
+          <li>Familiar with responsive design principles using <strong style="color:#84fab0;">Flexbox and Grid</strong>.
+          </li>
+          <li>Experience with <strong style="color:#84fab0;">Tailwind CSS</strong> and awareness of UI libraries.</li>
+          <li>Familiar with <strong style="color:#84fab0;">Git and GitHub</strong> for version control and
+            collaboration.</li>
+          <li>Understanding of debugging using <strong style="color:#84fab0;">browser developer tools</strong>.</li>
+        </ul>
+
+      </div>
+      <div class="skill-line">
+
+        <h2><strong>SKILLS – <span style="color:#8fd3f4;">BACKEND</span> (Node.js, Express, MongoDB)</strong></h2>
+
+        <ul>
+          <li>Familiar with developing <strong style="color:#84fab0;">RESTful APIs</strong> using Node.js and
+            Express.js.</li>
+          <li>Understanding of <strong style="color:#84fab0;">CRUD operations</strong> using MongoDB with Mongoose.</li>
+          <li>Knowledge of <strong style="color:#84fab0;">MVC architecture</strong> for backend application structure.
+          </li>
+          <li>Familiar with handling <strong style="color:#84fab0;">POST, GET, PATCH, and DELETE</strong> API requests.
+          </li>
+          <li>Understanding of <strong style="color:#84fab0;">Mongoose schemas and models</strong> for data validation.
+          </li>
+          <li>Knowledge of <strong style="color:#84fab0;">req.body, req.params, and req.query</strong> handling.</li>
+          <li>Familiar with <strong style="color:#84fab0;">filtering, sorting, pagination, and field limiting</strong>.
+          </li>
+          <li>Understanding of <strong style="color:#84fab0;">environment variables</strong> using dotenv.</li>
+          <li>Familiar with <strong style="color:#84fab0;">MongoDB Atlas</strong> integration.</li>
+          <li>Knowledge of <strong style="color:#84fab0;">middleware usage</strong> and API testing using Postman.</li>
+        </ul>
+      </div>
       <div>
 
         <h2><strong>SKILLS – <span style="color:#8fd3f4;">DEPLOYMENT & DEVOPS</span></strong></h2>
-        
+
         <ul>
-          <li>Understanding of the <strong style="color:#84fab0;">DevOps lifecycle</strong> including development, deployment, monitoring, and feedback.</li>
-          <li>Hands-on experience with <strong style="color:#84fab0;">VirtualBox and VMware</strong> virtual machines.</li>
+          <li>Understanding of the <strong style="color:#84fab0;">DevOps lifecycle</strong> including development,
+            deployment, monitoring, and feedback.</li>
+          <li>Hands-on experience with <strong style="color:#84fab0;">VirtualBox and VMware</strong> virtual machines.
+          </li>
           <li>Comfortable with <strong style="color:#84fab0;">basic Linux commands</strong> and shell utilities.</li>
           <li>Experience using <strong style="color:#84fab0;">Git Bash</strong> for version control operations.</li>
-          <li>Basic understanding of <strong style="color:#84fab0;">infrastructure provisioning</strong> and shell scripting.</li>
+          <li>Basic understanding of <strong style="color:#84fab0;">infrastructure provisioning</strong> and shell
+            scripting.</li>
           <li>Familiar with <strong style="color:#84fab0;">Docker fundamentals</strong> and container lifecycle.</li>
-          <li>Understanding of <strong style="color:#84fab0;">Kubernetes basics</strong> including pods, deployments, and services.</li>
+          <li>Understanding of <strong style="color:#84fab0;">Kubernetes basics</strong> including pods, deployments,
+            and services.</li>
         </ul>
       </div>
-      </section>
-      
-      
-      <section id="projects">
-      
-        <div class="projects-grid">
-          <article class="project-card">
-            <img
-              src="https://images.unsplash.com/photo-1555066931-4365d14bab8c"
-              alt="Full Stack Web Application"
-            />
-            <h3>Full-Stack Web Application</h3>
-            <p>
-              Developed a complete full-stack web application with a responsive
-              frontend using HTML, CSS, JavaScript, and React. Implemented a Node.js
-              and Express backend with MongoDB for data storage, following clean MVC
-              architecture and RESTful API principles.
-            </p>
-          </article>
-      
-          <article class="project-card">
-            <img
-              src="https://images.unsplash.com/photo-1517430816045-df4b7de11d1d"
-              alt="REST API Development"
-            />
-            <h3>RESTful API System</h3>
-            <p>
-              Built secure and scalable RESTful APIs using Node.js, Express, and
-              MongoDB. Implemented CRUD operations, query filtering, sorting,
-              pagination, and environment-based configuration using dotenv, with API
-              testing performed via Postman.
-            </p>
-          </article>
-      
-          <article class="project-card">
-            <img
-              src="https://images.unsplash.com/photo-1555949963-aa79dcee981c"
-              alt="DevOps and Deployment"
-            />
-            <h3>DevOps & Deployment Pipeline</h3>
-            <p>
-              Designed a deployment workflow using Git, Docker, and CI/CD practices.
-              Containerized applications for consistent environments and gained
-              hands-on experience with Kubernetes fundamentals, virtual machines, and
-              Linux-based tooling.
-            </p>
-          </article>
-      
-          <article class="project-card">
-            <img
-              src="https://images.unsplash.com/photo-1526378722484-bd91ca387e72"
-              alt="Responsive Frontend Project"
-            />
-            <h3>Responsive Frontend Dashboard</h3>
-            <p>
-              Created a modern, responsive dashboard interface using React, Tailwind
-              CSS, Flexbox, and Grid. Focused on clean UI design, dynamic rendering,
-              efficient state management, and browser-based debugging for optimal user
-              experience.
-            </p>
-          </article>
-        </div>
-      </section>
-      
-      <section id="contact" class="flex">
-          <div class="contact-box flex">
-            <div class="contact-icon-container flex">
-             
-                <ul class="contact-icons">
-                  <li class="flex">
-                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sarwarkawoosa@gmail.com&su=Portfolio%20Inquiry" class="qwert" target="_blank"
-                      ><i class="fa-solid fa-envelope"></i
-                    ></a>
-                  </li>
-                  <li class="flex">
-                    <a href="#" class="qwert" target="_blank"
-                      ><i class="fa-brands fa-facebook-messenger"></i
-                    ></a>
-                  </li>
-                  <li class="flex">
-                    <a href="https://wa.me/+9103489268" class="qwert"
-                      ><i class="fa-brands fa-whatsapp"></i
-                    ></a>
-                  </li>
-                  <li class="flex">
-                    <a href="tel:+91959644615" class="qwert"
-                      ><i class="fa-solid fa-phone"></i
-                    ></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="contact-form-container flex">
-              <div class="contact-main-text">
-                <h2>CONTACT ME</h2>
-                <span>get in touch</span>
-              </div>
-                <form action="" class="fill-form">
-                  <div class="input-names">
-                  <input
-                    type="text"
-                    name="first-name"
-                    placeholder="First Name"
-                    required
-                  />
-                  <input
-                    type="text"
-                    name="last-name"
-                    placeholder="Last Name"
-                    required
-                  />
-                </div>
-                <input type="email" name="email" placeholder="Email" class="email-fill">
-               <div class="so-fill">
-                 <input type="text" name="textbox" placeholder="Write-Something" ></div>
-                <div class="form-buttons">
-                <button type="submit" class="last-buttons">SUBMIT</button>
-                <button type="reset" class="last-buttons">RESET</button>
-              </div>
-                </form>
-              
-              </div>
-            </div>
-          </div>
-        
-      </section>
-      <!--sections end-->
-      <!-- footer start here-->
-    <footer>
-        <div class="footer-area">
+    </section>
+
+
+    <section id="projects">
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c" alt="Full Stack Web Application" />
+          <h3>Full-Stack Web Application</h3>
+          <p>
+            Developed a complete full-stack web application with a responsive
+            frontend using HTML, CSS, JavaScript, and React. Implemented a Node.js
+            and Express backend with MongoDB for data storage, following clean MVC
+            architecture and RESTful API principles.
+          </p>
+        </article>
+
+        <article class="project-card">
+          <img src="https://images.unsplash.com/photo-1517430816045-df4b7de11d1d" alt="REST API Development" />
+          <h3>RESTful API System</h3>
+          <p>
+            Built secure and scalable RESTful APIs using Node.js, Express, and
+            MongoDB. Implemented CRUD operations, query filtering, sorting,
+            pagination, and environment-based configuration using dotenv, with API
+            testing performed via Postman.
+          </p>
+        </article>
+
+        <article class="project-card">
+          <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c" alt="DevOps and Deployment" />
+          <h3>DevOps & Deployment Pipeline</h3>
+          <p>
+            Designed a deployment workflow using Git, Docker, and CI/CD practices.
+            Containerized applications for consistent environments and gained
+            hands-on experience with Kubernetes fundamentals, virtual machines, and
+            Linux-based tooling.
+          </p>
+        </article>
+
+        <article class="project-card">
+          <img src="https://images.unsplash.com/photo-1526378722484-bd91ca387e72" alt="Responsive Frontend Project" />
+          <h3>Responsive Frontend Dashboard</h3>
+          <p>
+            Created a modern, responsive dashboard interface using React, Tailwind
+            CSS, Flexbox, and Grid. Focused on clean UI design, dynamic rendering,
+            efficient state management, and browser-based debugging for optimal user
+            experience.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="flex">
+      <div class="contact-box flex">
+        <div class="contact-icon-container flex">
+
           <ul class="contact-icons">
-            <li>
-              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sarwarkawoosa@gmail.com&su=Portfolio%20Inquiry" target="_blank">
-                <i class="fa-solid fa-envelope"></i>
-              </a>
+            <li class="flex">
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sarwarkawoosa@gmail.com&su=Portfolio%20Inquiry"
+                class="qwert" target="_blank"><i class="fa-solid fa-envelope"></i></a>
             </li>
-           
-            
-            <li >
-              <a href="#" class="qwert target="_blank"
-                ><i class="fa-brands fa-facebook-messenger"></i
-              ></a>
+            <li class="flex">
+              <a href="#" class="qwert" target="_blank"><i class="fa-brands fa-facebook-messenger"></i></a>
             </li>
-            <li >
-              <a href="https://wa.me/+9103489268" target="_blank class="qwert"
-                ><i class="fa-brands fa-whatsapp"></i
-              ></a>
+            <li class="flex">
+              <a href="https://wa.me/+9103489268" class="qwert"><i class="fa-brands fa-whatsapp"></i></a>
             </li>
-            <li >
-              <a href="https://www.linkedin.com/in/sarwar-bashir-kawoosa-384498217/" target="_blank class="qwert"
-                ><i class="fa-brands fa-linkedin-in"></i></a>
-            </li>
-            <li >
-              <a href="tel:+919103489268" class="qwert"
-                ><i class="fa-solid fa-phone"></i
-              ></a>
-            </li>
-            <li >
-              <a href="https://github.com/sarwar9596" target="_blank class="qwert"
-                ><i class="fa-brands fa-github"></i></a>
+            <li class="flex">
+              <a href="tel:+91959644615" class="qwert"><i class="fa-solid fa-phone"></i></a>
             </li>
           </ul>
-          <div class="copyright"><h5>All rights reserved-- copyright@c</h5></div>
         </div>
-      </footer>  
-       <!-- footer end here-->
+      </div>
+      <div class="contact-form-container flex">
+        <div class="contact-main-text">
+          <h2>CONTACT ME</h2>
+          <span>get in touch</span>
+        </div>
+        <form action="" class="fill-form">
+          <div class="input-names">
+            <input type="text" name="first-name" placeholder="First Name" required />
+            <input type="text" name="last-name" placeholder="Last Name" required />
+          </div>
+          <input type="email" name="email" placeholder="Email" class="email-fill">
+          <div class="so-fill">
+            <input type="text" name="textbox" placeholder="Write-Something">
+          </div>
+          <div class="form-buttons">
+            <button type="submit" class="last-buttons">SUBMIT</button>
+            <button type="reset" class="last-buttons">RESET</button>
+          </div>
+        </form>
+
+      </div>
+  </div>
+  </div>
+
+  </section>
+  <!--sections end-->
+  <!-- footer start here-->
+  <footer>
+    <div class="footer-area">
+      <ul class="contact-icons">
+        <li>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sarwarkawoosa@gmail.com&su=Portfolio%20Inquiry"
+            target="_blank">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </li>
+
+
+        <li>
+          <a href="#" class="qwert target=" _blank"><i class="fa-brands fa-facebook-messenger"></i></a>
+        </li>
+        <li>
+          <a href="https://wa.me/+9103489268" target="_blank class=" qwert"><i class="fa-brands fa-whatsapp"></i></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/sarwar-bashir-kawoosa-384498217/" target="_blank class=" qwert"><i
+              class="fa-brands fa-linkedin-in"></i></a>
+        </li>
+        <li>
+          <a href="tel:+919103489268" class="qwert"><i class="fa-solid fa-phone"></i></a>
+        </li>
+        <li>
+          <a href="https://github.com/sarwar9596" target="_blank class=" qwert"><i class="fa-brands fa-github"></i></a>
+        </li>
+      </ul>
+      <div class="copyright">
+        <h5>All rights reserved-- copyright@c</h5>
+      </div>
     </div>
-    
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script src="script.js"></script>
-  </body>
+  </footer>
+  <!-- footer end here-->
+  </div>
+
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="script.js"></script>
+</body>
+
 </html>
